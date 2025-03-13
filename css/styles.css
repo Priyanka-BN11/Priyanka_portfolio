@@ -1,0 +1,110 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    scroll-behavior: smooth;
+}
+
+/* Parallax Background */
+.parallax {
+    height: 100vh;
+    background: url('https://source.unsplash.com/1600x900/?technology,coding') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+/* Timeline Container */
+.timeline {
+    position: relative;
+    width: 60%;
+    margin: 50px auto;
+    padding-left: 50px;
+    border-left: 3px solid transparent; /* Set to transparent for cleaner look */
+}
+
+/* Timeline Item */
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Timeline Icon */
+.timeline-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -40px;
+    top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+/* Material Icons */
+.timeline-icon .material-icons {
+    font-size: 1.6rem;
+    color: white;
+}
+
+/* Timeline Content */
+.timeline-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    width: 100%;
+}
+
+/* Hover Animation */
+.timeline-content:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Vertical Line */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #4CAF50;
+    z-index: 1;
+}
