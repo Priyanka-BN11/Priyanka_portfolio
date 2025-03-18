@@ -22,7 +22,7 @@ This is my **personal portfolio website** showcasing my work, experience, and sk
 ---
 
 ## 📷 Preview  
-You can check out the live website here: **[Your Live Portfolio Link](#)** (Replace with your actual link)
+You can check out the live website here: **[Your Live Portfolio Link](#)** 
 
 ---
 
