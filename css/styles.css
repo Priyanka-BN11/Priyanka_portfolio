@@ -121,7 +121,7 @@ ul li {
     font-size: 2rem;
     font-weight: bold;
     color: #ff6347; /* Tomato color for the text */
-    animation: bounce s infinite; /* Bouncing animation */
+    animation: bounce 2s infinite; /* Bouncing animation */
   }
 
   @keyframes bounce {
@@ -140,4 +140,10 @@ ul li {
     100% {
       transform: translateY(0);
     }
+  }
+  .typing-text {
+    color:cornflowerblue;
+    font-size:2rem;
+    font-style: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
   }
