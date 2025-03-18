@@ -1,6 +1,6 @@
 body, html {
     margin: 0;
-    padding: 0;
+    padding-top: 70px;
     font-family: Arial, sans-serif;
     background: #f4f4f4;
     scroll-behavior: smooth;
@@ -8,8 +8,9 @@ body, html {
 
 /* Parallax Background */
 .parallax {
+    position:relative;
     height: 100vh;
-    background: url('https://source.unsplash.com/1600x900/?technology,coding') no-repeat center center/cover;
+    background: url('../img/laptop.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,3 +109,35 @@ ul li {
     background-color: #4CAF50;
     z-index: 1;
 }
+
+.profile__portrait{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    float :right;  
+    object-fit: cover;
+}
+.highlight {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff6347; /* Tomato color for the text */
+    animation: bounce s infinite; /* Bouncing animation */
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }

@@ -6,13 +6,17 @@
     <title>Experience Timeline</title>
     <link rel="stylesheet" href="../css/styles.css">
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <!-- <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
 </head>
 </head>
 <body>
-
+      <script src="../js/script.js"></script>
+<!-- Navbar will be inserted here -->
+<div id="navbar-placeholder"></div>
      
    
    <!-- Parallax Background Header -->
@@ -75,9 +79,22 @@
 </div>
 
 <!-- Initialize AOS -->
+
 <script>
-    AOS.init(); // Initialize animations
-</script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch('navbar.html')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Navbar file not found!');
+          }
+          return response.text();
+        })
+        .then(data => {
+          document.getElementById('navbar-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navbar:', error));
+    });
+  </script>
 
 </body>
 </html>
