@@ -22,7 +22,7 @@ This is my **personal portfolio website** showcasing my work, experience, and sk
 ---
 
 ## 📷 Preview  
-You can check out the live website here: **[My Live Portfolio Link](#)** 
+You can check out the live website here: **[https://priyanka-bn11.github.io/Priyanka_portfolio/](#)** 
 
 ---
 
