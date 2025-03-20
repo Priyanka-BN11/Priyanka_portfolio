@@ -230,3 +230,31 @@ ul li {
 .btn {
     margin: 5px; /* Space around each button */
 }
+#skills{
+    margin-bottom: 100px;
+}
+#projects{
+    position:relative;
+    height: fit-content;
+    
+    margin-top: 100px;
+    
+}
+.min-vh-100 {
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Make image column full height */
+.full-height {
+    height: 100vh; /* Full height */
+    object-fit: cover; /* Ensure image scales properly */
+}
+
+/* Center content in the text column */
+.text-center {
+    text-align: center;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
