@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Function to fetch and insert the navbar
-  fetch('navbar.html')
+  fetch('./html/navbar.html')
       .then(response => {
           if (!response.ok) {
               throw new Error('Navbar file not found!');
