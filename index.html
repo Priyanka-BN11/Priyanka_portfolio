@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="../js/script.js"></script>
-    <link rel="stylesheet" href="../css/styles.css">
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -14,13 +14,31 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <!-- <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
   </head>
 
   <body>
     <!-- Navbar will be inserted here -->
-    <div id="navbar-placeholder"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Priyanka Bangalore Nagaraja</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link " onclick="active(this)" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" onclick="active(this)" href="#experience">Experience</a></li>
+              <li class="nav-item"><a class="nav-link" onclick="active(this)" href="#skills">Skills</a></li>
+              <li class="nav-item"><a class="nav-link" onclick="active(this)" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" onclick="active(this)" href="#education">Education</a></li>
+              <li class="nav-item"><a class="nav-link" onclick="active(this)" href="#contact">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" onclick="active(this)" href="#others">Others</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <section id="home" class="section">
     <main class="container">
         <div class="profile">
@@ -32,10 +50,10 @@
            
             <br>
               <p class="short">Feel free to connect with me:</p>
-              <a href="https:www.linkedin.com/in/priyanka-bangalore-nagaraja-729a31193" target="_blank"><img src="../img/linkedin.png" alt="LinkedIn" class="social-icon"></a> 
-              <a href="mailto:priyankabangalorenagaraja@gmail.com"><img src="../img/gmail.png" alt="Gmail" class="social-icon"></a> 
-              <a href="https://github.com/Priyanka-BN11"><img src="../img/github.png" alt="Github" class="social-icon"></a>
-              <a href=""><img src="../img/instagram.png" alt="Instagram" class="social-icon"></a>
+              <a href="https:www.linkedin.com/in/priyanka-bangalore-nagaraja-729a31193" target="_blank"><img src="./img/linkedin.png" alt="LinkedIn" class="social-icon"></a> 
+              <a href="mailto:priyankabangalorenagaraja@gmail.com"><img src="./img/gmail.png" alt="Gmail" class="social-icon"></a> 
+              <a href="https://github.com/Priyanka-BN11"><img src="./img/github.png" alt="Github" class="social-icon"></a>
+              <a href=""><img src="./img/instagram.png" alt="Instagram" class="social-icon"></a>
   
           </div>
     </main>
@@ -120,49 +138,49 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <button type="button" class="btn "><img src="../icons/html.png" alt="html" class="icon d-block mx-auto">Html</button>
-                        <button type="button" class="btn "><img src="../icons/css.png" alt="html" class="icon d-block mx-auto">CSS</button>
-                        <button type="button" class="btn "><img src="../icons/javascript.png" alt="html" class="icon d-block mx-auto">JavaScript</button>
-                        <button type="button" class="btn "><img src="../icons/es6.png" alt="html" class="icon d-block mx-auto">ES6</button>
-                        <button type="button" class="btn "><img src="../icons/bootstrap.png" alt="html" class="icon d-block mx-auto">Bootstrap</button>
-                        <button type="button" class="btn "><img src="../icons/tailwind-css.png" alt="html" class="icon d-block mx-auto">Tailwind Css</button>
-                        <button type="button" class="btn "><img src="../icons/material-ui.png" alt="html" class="icon d-block mx-auto">Material UI</button>
-                        <button type="button" class="btn "><img src="../icons/react.png" alt="html" class="icon d-block mx-auto">React Js</button>
-                        <button type="button" class="btn "><img src="../icons/nextjs.png" alt="html" class="icon d-block mx-auto">Next js</button>
-                        <button type="button" class="btn "><img src="../icons/react-native.png" alt="html" class="icon d-block mx-auto">React native</button>
-                        <button type="button" class="btn "><img src="../icons/redux.png" alt="html" class="icon d-block mx-auto">Redux</button>
-                        <button type="button" class="btn "><img src="../icons/babel.png" alt="html" class="icon d-block mx-auto">Babel</button>
+                        <button type="button" class="btn "><img src="./icons/html.png" alt="html" class="icon d-block mx-auto">Html</button>
+                        <button type="button" class="btn "><img src="./icons/css.png" alt="html" class="icon d-block mx-auto">CSS</button>
+                        <button type="button" class="btn "><img src="./icons/javascript.png" alt="html" class="icon d-block mx-auto">JavaScript</button>
+                        <button type="button" class="btn "><img src="./icons/es6.png" alt="html" class="icon d-block mx-auto">ES6</button>
+                        <button type="button" class="btn "><img src="./icons/bootstrap.png" alt="html" class="icon d-block mx-auto">Bootstrap</button>
+                        <button type="button" class="btn "><img src="./icons/tailwind-css.png" alt="html" class="icon d-block mx-auto">Tailwind Css</button>
+                        <button type="button" class="btn "><img src="./icons/material-ui.png" alt="html" class="icon d-block mx-auto">Material UI</button>
+                        <button type="button" class="btn "><img src="./icons/react.png" alt="html" class="icon d-block mx-auto">React Js</button>
+                        <button type="button" class="btn "><img src="./icons/nextjs.png" alt="html" class="icon d-block mx-auto">Next js</button>
+                        <button type="button" class="btn "><img src="./icons/react-native.png" alt="html" class="icon d-block mx-auto">React native</button>
+                        <button type="button" class="btn "><img src="./icons/redux.png" alt="html" class="icon d-block mx-auto">Redux</button>
+                        <button type="button" class="btn "><img src="./icons/babel.png" alt="html" class="icon d-block mx-auto">Babel</button>
                     </div>
                     <div class="col">
                    
-                        <button type="button" class="btn"><img src="../icons/nodejs.png" alt="html" class="icon d-block mx-auto">Node js</button>
-                        <button type="button" class="btn"><img src="../icons/angular.png" alt="html" class="icon d-block mx-auto">Angular</button>
-                        <button type="button" class="btn"><img src="../icons/express-js.png" alt="html" class="icon d-block mx-auto">Express</button>
-                        <button type="button" class="btn"><img src="../icons/mysql.png" alt="html" class="icon d-block mx-auto">MySQL</button>
-                        <button type="button" class="btn"><img src="../icons/python.png" alt="html" class="icon d-block mx-auto">Python</button>
-                        <button type="button" class="btn"><img src="../icons/php.png" alt="html" class="icon d-block mx-auto">PHP</button>
-                        <button type="button" class="btn"><img src="../icons/java.png" alt="html" class="icon d-block mx-auto">Java</button>
-                        <button type="button" class="btn"><img src="../icons/mongo-db.png" alt="html" class="icon d-block mx-auto">Mongodb</button>
-                        <button type="button" class="btn"><img src="../icons/postgresql.png" alt="html" class="icon d-block mx-auto">PostgreSql</button>
-                        <button type="button" class="btn"><img src="../icons/google-firebase.png" alt="html" class="icon d-block mx-auto">Firebase</button>
+                        <button type="button" class="btn"><img src="./icons/nodejs.png" alt="html" class="icon d-block mx-auto">Node js</button>
+                        <button type="button" class="btn"><img src="./icons/angular.png" alt="html" class="icon d-block mx-auto">Angular</button>
+                        <button type="button" class="btn"><img src="./icons/express-js.png" alt="html" class="icon d-block mx-auto">Express</button>
+                        <button type="button" class="btn"><img src="./icons/mysql.png" alt="html" class="icon d-block mx-auto">MySQL</button>
+                        <button type="button" class="btn"><img src="./icons/python.png" alt="html" class="icon d-block mx-auto">Python</button>
+                        <button type="button" class="btn"><img src="./icons/php.png" alt="html" class="icon d-block mx-auto">PHP</button>
+                        <button type="button" class="btn"><img src="./icons/java.png" alt="html" class="icon d-block mx-auto">Java</button>
+                        <button type="button" class="btn"><img src="./icons/mongo-db.png" alt="html" class="icon d-block mx-auto">Mongodb</button>
+                        <button type="button" class="btn"><img src="./icons/postgresql.png" alt="html" class="icon d-block mx-auto">PostgreSql</button>
+                        <button type="button" class="btn"><img src="./icons/google-firebase.png" alt="html" class="icon d-block mx-auto">Firebase</button>
 
-                        <button type="button" class="btn"><img src="../icons/jquery.png" alt="html" class="icon d-block mx-auto">jQuery</button>
+                        <button type="button" class="btn"><img src="./icons/jquery.png" alt="html" class="icon d-block mx-auto">jQuery</button>
                     </div>
                     <div class="col">
                    
-                        <button type="button" class="btn"><img src="../icons/figma.png" alt="html" class="icon d-block mx-auto">Figma</button>
-                        <button type="button" class="btn"><img src="../icons/trello.png" alt="html" class="icon d-block mx-auto">Trello</button>
-                        <button type="button" class="btn"><img src="../icons/html.png" alt="html" class="icon d-block mx-auto">AJAX</button>
-                        <button type="button" class="btn"><img src="../icons/postman.png" alt="html" class="icon d-block mx-auto">Postman</button>
-                        <button type="button" class="btn "><img src="../icons/heroku.png" alt="html" class="icon d-block mx-auto">Heroku</button>
-                        <button type="button" class="btn"><img src="../icons/aws.png" alt="html" class="icon d-block mx-auto">AWS</button>
-                        <button type="button" class="btn"><img src="../icons/jira.png" alt="html" class="icon d-block mx-auto">Jira</button>
-                        <button type="button" class="btn"><img src="../icons/confluence.png" alt="html" class="icon d-block mx-auto">Confluence</button>
-                        <button type="button" class="btn"><img src="../icons/windows.png" alt="html" class="icon d-block mx-auto">Windows</button>
-                        <button type="button" class="btn"><img src="../icons/linux.png" alt="html" class="icon d-block mx-auto">Linux</button>
-                        <button type="button" class="btn"><img src="../icons/webpack.png" alt="html" class="icon d-block mx-auto">Webpack</button>
-                        <button type="button" class="btn"><img src="../icons/git.png" alt="html" class="icon d-block mx-auto">Git</button>
-                        <button type="button" class="btn"><img src="../icons/webflow.png" alt="html" class="icon d-block mx-auto">Webflow</button>
+                        <button type="button" class="btn"><img src="./icons/figma.png" alt="html" class="icon d-block mx-auto">Figma</button>
+                        <button type="button" class="btn"><img src="./icons/trello.png" alt="html" class="icon d-block mx-auto">Trello</button>
+                        <button type="button" class="btn"><img src="./icons/html.png" alt="html" class="icon d-block mx-auto">AJAX</button>
+                        <button type="button" class="btn"><img src="./icons/postman.png" alt="html" class="icon d-block mx-auto">Postman</button>
+                        <button type="button" class="btn "><img src="./icons/heroku.png" alt="html" class="icon d-block mx-auto">Heroku</button>
+                        <button type="button" class="btn"><img src="./icons/aws.png" alt="html" class="icon d-block mx-auto">AWS</button>
+                        <button type="button" class="btn"><img src="./icons/jira.png" alt="html" class="icon d-block mx-auto">Jira</button>
+                        <button type="button" class="btn"><img src="./icons/confluence.png" alt="html" class="icon d-block mx-auto">Confluence</button>
+                        <button type="button" class="btn"><img src="./icons/windows.png" alt="html" class="icon d-block mx-auto">Windows</button>
+                        <button type="button" class="btn"><img src="./icons/linux.png" alt="html" class="icon d-block mx-auto">Linux</button>
+                        <button type="button" class="btn"><img src="./icons/webpack.png" alt="html" class="icon d-block mx-auto">Webpack</button>
+                        <button type="button" class="btn"><img src="./icons/git.png" alt="html" class="icon d-block mx-auto">Git</button>
+                        <button type="button" class="btn"><img src="./icons/webflow.png" alt="html" class="icon d-block mx-auto">Webflow</button>
                     </div>
                 </div>
             </div>           
@@ -183,8 +201,8 @@
                   <p class="card-text">The goal of this project is to build a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.</p>
                   <div class="btn-group ">
                     
-                      <button type="button" class="btn me-2"><a href="https://github.com/Priyanka-BN11/meet"><img src="../icons/github.png"></a></button>
-                      <button type="button" class="btn"><a href="https://priyanka-bn11.github.io/meet/"><img src="../icons/website.png"></a></button>
+                      <button type="button" class="btn me-2"><a href="https://github.com/Priyanka-BN11/meet"><img src="./icons/github.png"></a></button>
+                      <button type="button" class="btn"><a href="https://priyanka-bn11.github.io/meet/"><img src="./icons/website.png"></a></button>
                     
                   </div>
                </div>
@@ -200,8 +218,8 @@
                     page application (SPA), consists of several interface views with routing and navigation</p>
                
                     <div class="btn-group">
-                        <button type="button" class="btn me-2"><a href="https://github.com/Priyanka-BN11/Movie-api-client"><img src="../icons/github.png"></a></button>
-                        <button type="button" class="btn "><a href="https://priyamovieapp.netlify.app/"><img src="../icons/website.png"></a></button>
+                        <button type="button" class="btn me-2"><a href="https://github.com/Priyanka-BN11/Movie-api-client"><img src="./icons/github.png"></a></button>
+                        <button type="button" class="btn "><a href="https://priyamovieapp.netlify.app/"><img src="./icons/website.png"></a></button>
                     </div>
                 
             </div>
@@ -222,8 +240,8 @@
                     loads data from an external API, displays each object and shows further detailsbin a modal. Pokémon’s can be searched by name of the Pokémon</p>
                  
                     <div class="btn-group">    
-                        <button type="button" class="btn me-2 "><a href="https://github.com/Priyanka-BN11/Simple-js-app"><img src="../icons/github.png"></a></button>
-                        <button type="button" class="btn "><a href="https://priyanka-bn11.github.io/simple-js-app/"><img src="../icons/website.png"></a></button>
+                        <button type="button" class="btn me-2 "><a href="https://github.com/Priyanka-BN11/Simple-js-app"><img src="./icons/github.png"></a></button>
+                        <button type="button" class="btn "><a href="https://priyanka-bn11.github.io/simple-js-app/"><img src="./icons/website.png"></a></button>
                     </div>
                   
                 </div>
@@ -246,8 +264,8 @@
                     </p>
                  
                     <div class="btn-group">
-                      <button type="button" class="btn me-2"><a href="https://priyanka-bn11.github.io/Portfolio/"><img src="../icons/github.png"></a></button>
-                      <button type="button" class="btn "><a href="https://priyanka-bn11.github.io/Portfolio/"><img src="../icons/website.png"></a></button>
+                      <button type="button" class="btn me-2"><a href="https://priyanka-bn11.github.io/Portfolio/"><img src="./icons/github.png"></a></button>
+                      <button type="button" class="btn "><a href="https://priyanka-bn11.github.io/Portfolio/"><img src="./icons/website.png"></a></button>
                     </div>
                 </div>
                 </div>
@@ -264,7 +282,7 @@
                   <p class="card-text">I accomplished a course “Front-End Web UI Frameworks and Tools:Bootstrap 4” from Coursera and developed this website.I was responsible for the frontend. It’s written in Bootstrap 4,Html and Css.</p>
                   
                     <div class="btn-group">
-                      <button type="button" class="btn"><a href="https://github.com/Priyanka-BN11/bootstrap"><img src="../icons/github.png"></a></button>
+                      <button type="button" class="btn"><a href="https://github.com/Priyanka-BN11/bootstrap"><img src="./icons/github.png"></a></button>
                     </div>
                   </div>
                 </div><div class="col-md-6 p-0 card">
@@ -283,8 +301,8 @@
                 <p class="card-text"> The web application will provide users with access to information about different movies, directors, and genres. Users will be able to sign up, update their personal 
                     information, and create a list of their favorite movies.</p>
                     <div class="btn-group">
-                      <button type="button" class="btn me-2"><a href="https://github.com/Priyanka-BN11/Movie-api"><img src="../icons/github.png"></a></button>
-                      <button type="button" class="btn "><a href="https://movie-app-priya.herokuapp.com/"><img src="../icons/website.png"></a></button>
+                      <button type="button" class="btn me-2"><a href="https://github.com/Priyanka-BN11/Movie-api"><img src="./icons/github.png"></a></button>
+                      <button type="button" class="btn "><a href="https://movie-app-priya.herokuapp.com/"><img src="./icons/website.png"></a></button>
                     </div>
             </div>
             </div>
