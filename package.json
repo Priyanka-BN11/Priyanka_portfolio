@@ -2,7 +2,7 @@
   "name": "portfolio_priya",
   "version": "1.0.0",
   "description": "This is my **personal portfolio website** showcasing my work, experience, and skills as a **Frontend Web Developer & Fullstack Developer**. It is built with HTML, CSS, JavaScript, and Bootstrap.",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,6 +15,6 @@
   "bugs": {
     "url": "https://github.com/Priyanka-BN11/Priyanka_portfolio/issues"
   },
-  "homepage": "https://github.com/Priyanka-BN11/Priyanka_portfolio/index.html",
+  "homepage": "https://github.com/Priyanka-BN11/Priyanka_portfolio/html/index.html",
   "keywords": []
 }
