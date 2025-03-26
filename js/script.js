@@ -20,41 +20,53 @@ document.addEventListener("DOMContentLoaded", function () {
             console.error("AOS library not found!");
         }
     });
-// Smooth Scrolling
+// Smooth Scrolling & Active Link Highlighting
 function setupNavbar() {
-  document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', function (event) {
-          event.preventDefault();
-          const targetId = this.getAttribute('href').substring(1);
-          const targetSection = document.getElementById(targetId);
-          
-          if (targetSection) {
-              window.scrollTo({
-                  top: targetSection.offsetTop - 60,
-                  behavior: "smooth"
-              });
-          }
-      });
-  });
+    const navLinks = document.querySelectorAll('.nav-link');
 
-  // Highlight Active Section on Scroll
-  window.addEventListener("scroll", () => {
-      let sections = document.querySelectorAll("section");
-      let navLinks = document.querySelectorAll(".nav-link");
+    // Smooth scrolling for navbar links
+    navLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
 
-      let scrollY = window.pageYOffset;
+            if (targetSection) {
+                window.scrollTo({
+                    top: targetSection.offsetTop - 70, // Adjust for fixed navbar height
+                    behavior: "smooth"
+                });
+            }
 
-      sections.forEach((section, index) => {
-          let sectionTop = section.offsetTop - 100;
-          let sectionHeight = section.clientHeight;
+            // Update active class immediately on click
+            navLinks.forEach(nav => nav.classList.remove("active"));
+            this.classList.add("active");
+        });
+    });
 
-          if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-              navLinks.forEach(link => link.classList.remove("active"));
-              navLinks[index].classList.add("active");
-          }
-      });
-  });
+    // Highlight Active Section on Scroll
+    window.addEventListener("scroll", () => {
+        let scrollY = window.pageYOffset;
+
+        document.querySelectorAll("section").forEach(section => {
+            let sectionTop = section.offsetTop - 100;
+            let sectionHeight = section.clientHeight;
+            let sectionId = section.getAttribute("id");
+
+            if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                navLinks.forEach(link => {
+                    link.classList.remove("active");
+                    if (link.getAttribute("href").substring(1) === sectionId) {
+                        link.classList.add("active");
+                    }
+                });
+            }
+        });
+    });
 }
+
+// Run the function when the document is loaded
+document.addEventListener("DOMContentLoaded", setupNavbar);
   // Typing Effect Function
   function typeText(elementId, text, speed) {
       let i = 0;
